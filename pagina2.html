@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CineMax | Inicio</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="app-body">
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside id="sidebar" class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <span class="logo-icon">🎬</span>
+
+            <span>
+                Cine<span>Max</span>
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MENÚ
+            </p>
+
+            <button
+                class="nav-item active"
+                data-section="home"
+            >
+                <span>⌂</span>
+                <span>Inicio</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-section="movies"
+            >
+                <span>🎬</span>
+                <span>Películas</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-section="tickets"
+            >
+                <span>🎟️</span>
+                <span>Mis entradas</span>
+            </button>
+
+
+            <p class="nav-title">
+                CUENTA
+            </p>
+
+
+            <button
+                class="nav-item"
+                data-section="profile"
+            >
+                <span>👤</span>
+                <span>Mi perfil</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-section="help"
+            >
+                <span>❓</span>
+                <span>Ayuda</span>
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button
+                id="sidebarLogout"
+                class="logout-button"
+            >
+                <span>↪</span>
+                Cerrar sesión
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <button
+                id="mobileMenu"
+                class="mobile-menu"
+            >
+                ☰
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="globalSearch"
+                    placeholder="Buscar películas..."
+                >
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button
+                    id="notificationButton"
+                    class="icon-button"
+                >
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="user-mini">
+
+                    <div class="user-avatar">
+                        N
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong id="topUserName">
+                            Nicolas
+                        </strong>
+
+                        <small>
+                            Cliente
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             NOTIFICACIONES
+        ====================================== -->
+
+        <div
+            id="notificationPanel"
+            class="notification-panel"
+        >
+
+            <div class="notification-header">
+
+                <strong>Notificaciones</strong>
+
+                <button id="closeNotifications">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <span>🎬</span>
+
+                <div>
+                    <strong>Nuevos estrenos</strong>
+                    <p>Descubre las películas disponibles esta semana.</p>
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <span>🎟️</span>
+
+                <div>
+                    <strong>Reserva tus asientos</strong>
+                    <p>Selecciona tu lugar antes de que se agote.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             HOME
+        ========================================== -->
+
+        <section
+            id="home"
+            class="page-section active-section"
+        >
+
+            <div class="welcome-row">
+
+                <div>
+
+                    <span class="section-label">
+                        CINE • ENTRETENIMIENTO • EXPERIENCIA
+                    </span>
+
+                    <h1>
+                        Hola,
+                        <span id="welcomeName">
+                            Nicolas
+                        </span> 👋
+                    </h1>
+
+                    <p>
+                        ¿Qué película quieres ver hoy?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO -->
+
+            <div class="hero-banner">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        ⭐ PELÍCULA DESTACADA
+                    </span>
+
+                    <h2>
+                        El Último Viaje
+                    </h2>
+
+                    <p>
+                        Una aventura que llevará a nuestros protagonistas
+                        al límite. Descubre una historia llena de acción,
+                        misterio y emoción.
+                    </p>
+
+
+                    <div class="hero-meta">
+
+                        <span>⭐ 8.9</span>
+                        <span>2026</span>
+                        <span>2h 08min</span>
+                        <span>+13</span>
+
+                    </div>
+
+
+                    <button
+                        class="primary-button"
+                        id="heroBookButton"
+                        data-movie="el-ultimo-viaje"
+                    >
+                        Reservar entradas →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PELÍCULAS -->
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        AHORA EN CARTELERA
+                    </span>
+
+                    <h2>
+                        Películas populares
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="text-button"
+                    data-section="movies"
+                >
+                    Ver todas →
+                </button>
+
+            </div>
+
+
+            <div
+                id="homeMovieGrid"
+                class="movie-grid"
+            ></div>
+
+
+            <!-- PRÓXIMAMENTE -->
+
+            <div class="section-heading upcoming-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        PRÓXIMAMENTE
+                    </span>
+
+                    <h2>
+                        Muy pronto
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="upcomingGrid"
+                class="movie-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================================
+             PELÍCULAS
+        ========================================== -->
+
+        <section
+            id="movies"
+            class="page-section"
+        >
+
+            <div class="page-title">
+
+                <span class="section-label">
+                    CARTELERA
+                </span>
+
+                <h1>
+                    Todas las películas
+                </h1>
+
+                <p>
+                    Encuentra tu próxima película favorita.
+                </p>
+
+            </div>
+
+
+            <div class="movie-controls">
+
+                <div class="movie-search">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        id="movieSearch"
+                        placeholder="Buscar película..."
+                    >
+
+                </div>
+
+
+                <div
+                    id="genreFilters"
+                    class="genre-filters"
+                >
+
+                    <button
+                        class="genre-filter active"
+                        data-genre="all"
+                    >
+                        Todas
+                    </button>
+
+                    <button
+                        class="genre-filter"
+                        data-genre="Acción"
+                    >
+                        Acción
+                    </button>
+
+                    <button
+                        class="genre-filter"
+                        data-genre="Comedia"
+                    >
+                        Comedia
+                    </button>
+
+                    <button
+                        class="genre-filter"
+                        data-genre="Drama"
+                    >
+                        Drama
+                    </button>
+
+                    <button
+                        class="genre-filter"
+                        data-genre="Terror"
+                    >
+                        Terror
+                    </button>
+
+                    <button
+                        class="genre-filter"
+                        data-genre="Animación"
+                    >
+                        Animación
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="movieGrid"
+                class="movie-grid large-grid"
+            ></div>
+
+
+            <div
+                id="movieEmpty"
+                class="empty-state hidden"
+            >
+
+                <span>🎬</span>
+
+                <h3>
+                    No encontramos películas
+                </h3>
+
+                <p>
+                    Intenta con otro nombre o género.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             RESERVAR
+        ========================================== -->
+
+        <section
+            id="bookingSection"
+            class="page-section"
+        >
+
+            <button
+                id="backToMovies"
+                class="back-button"
+            >
+                ← Volver a películas
+            </button>
+
+
+            <div class="booking-header">
+
+                <div class="booking-movie">
+
+                    <div
+                        id="bookingPoster"
+                        class="booking-poster"
+                    >
+                        🎬
+                    </div>
+
+                    <div>
+
+                        <span
+                            id="bookingGenre"
+                            class="section-label"
+                        >
+                            ACCIÓN
+                        </span>
+
+                        <h1 id="bookingMovieTitle">
+                            Película
+                        </h1>
+
+                        <p>
+                            Selecciona la función y tus asientos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-layout">
+
+                <div class="booking-selection">
+
+                    <!-- FECHA -->
+
+                    <div class="booking-block">
+
+                        <div class="booking-block-title">
+
+                            <span class="step-number">
+                                1
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Selecciona una fecha
+                                </strong>
+
+                                <small>
+                                    Elige el día de tu función
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="dateOptions"
+                            class="date-options"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- HORARIO -->
+
+                    <div class="booking-block">
+
+                        <div class="booking-block-title">
+
+                            <span class="step-number">
+                                2
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Selecciona un horario
+                                </strong>
+
+                                <small>
+                                    Horarios disponibles
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="timeOptions"
+                            class="time-options"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- SALA -->
+
+                    <div class="room-info">
+
+                        <span>🎦</span>
+
+                        <div>
+
+                            <strong>
+                                Sala
+                            </strong>
+
+                            <p id="bookingRoom">
+                                Sala 1
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ASIENTOS -->
+
+                    <div class="booking-block">
+
+                        <div class="booking-block-title">
+
+                            <span class="step-number">
+                                3
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Elige tus asientos
+                                </strong>
+
+                                <small>
+                                    Selecciona hasta 8 asientos
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="screen-container">
+
+                            <div class="screen">
+                                PANTALLA
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="seatMap"
+                            class="seat-map"
+                        ></div>
+
+
+                        <div class="seat-legend">
+
+                            <span>
+                                <i class="legend-seat available"></i>
+                                Disponible
+                            </span>
+
+                            <span>
+                                <i class="legend-seat selected"></i>
+                                Seleccionado
+                            </span>
+
+                            <span>
+                                <i class="legend-seat occupied"></i>
+                                Ocupado
+                            </span>
+
+                            <span>
+                                <i class="legend-seat premium"></i>
+                                Premium
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESUMEN -->
+
+                <aside class="booking-summary">
+
+                    <div class="summary-card">
+
+                        <h3>
+                            Resumen de compra
+                        </h3>
+
+
+                        <div class="summary-movie">
+
+                            <div
+                                id="summaryPoster"
+                                class="summary-poster"
+                            >
+                                🎬
+                            </div>
+
+                            <div>
+
+                                <strong id="summaryMovieTitle">
+                                    Película
+                                </strong>
+
+                                <p id="summaryDate">
+                                    Selecciona una fecha
+                                </p>
+
+                                <p id="summaryTime">
+                                    Selecciona un horario
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="summary-info">
+
+                            <div>
+
+                                <span>
+                                    Sala
+                                </span>
+
+                                <strong id="summaryRoom">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Asientos
+                                </span>
+
+                                <strong id="selectedSeats">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-price-row">
+
+                            <span>
+                                Entradas
+                            </span>
+
+                            <strong>
+                                <span id="summaryTicketCount">
+                                    0
+                                </span>
+                                × $15.000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="summaryTotal">
+                                $0
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            id="confirmBooking"
+                            class="primary-button full-button"
+                        >
+                            Confirmar reserva
+                        </button>
+
+
+                        <p class="secure-note">
+                            🔒 Tu reserva se guarda de forma segura en este dispositivo.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TICKETS
+        ========================================== -->
+
+        <section
+            id="tickets"
+            class="page-section"
+        >
+
+            <div class="page-title">
+
+                <span class="section-label">
+                    MIS RESERVAS
+                </span>
+
+                <h1>
+                    Mis entradas
+                </h1>
+
+                <p>
+                    Aquí encontrarás todas tus reservas.
+                </p>
+
+            </div>
+
+
+            <div
+                id="ticketsContainer"
+                class="tickets-container"
+            ></div>
+
+        </section>
+
+
+        <!-- =========================================
+             PERFIL
+        ========================================== -->
+
+        <section
+            id="profile"
+            class="page-section"
+        >
+
+            <div class="page-title">
+
+                <span class="section-label">
+                    CUENTA
+                </span>
+
+                <h1>
+                    Mi perfil
+                </h1>
+
+                <p>
+                    Información de tu cuenta CineMax.
+                </p>
+
+            </div>
+
+
+            <div class="profile-card">
+
+                <div class="profile-cover"></div>
+
+
+                <div class="profile-content">
+
+                    <div class="profile-avatar">
+                        N
+                    </div>
+
+
+                    <div class="profile-main-info">
+
+                        <h2 id="profileName">
+                            Nicolas
+                        </h2>
+
+                        <p id="profileEmail">
+                            cine@cinemax.com
+                        </p>
+
+                        <span class="profile-status">
+                            ● Cuenta activa
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-form">
+
+                    <div class="input-group">
+
+                        <label>
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="profileNameInput"
+                            value="Nicolas"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profileEmailInput"
+                            value="cine@cinemax.com"
+                        >
+
+                    </div>
+
+
+                    <button
+                        id="saveProfile"
+                        class="primary-button"
+                    >
+                        Guardar cambios
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             AYUDA
+        ========================================== -->
+
+        <section
+            id="help"
+            class="page-section"
+        >
+
+            <div class="page-title">
+
+                <span class="section-label">
+                    SOPORTE
+                </span>
+
+                <h1>
+                    Centro de ayuda
+                </h1>
+
+                <p>
+                    Todo lo que necesitas para utilizar CineMax.
+                </p>
+
+            </div>
+
+
+            <div class="help-grid">
+
+                <div class="help-card">
+
+                    <span>
+                        🎟️
+                    </span>
+
+                    <h3>
+                        ¿Cómo comprar?
+                    </h3>
+
+                    <p>
+                        Busca una película, selecciona la función,
+                        elige tus asientos y confirma la reserva.
+                    </p>
+
+                </div>
+
+
+                <div class="help-card">
+
+                    <span>
+                        💺
+                    </span>
+
+                    <h3>
+                        Selección de asientos
+                    </h3>
+
+                    <p>
+                        Los asientos grises están ocupados.
+                        Los disponibles pueden seleccionarse.
+                    </p>
+
+                </div>
+
+
+                <div class="help-card">
+
+                    <span>
+                        📱
+                    </span>
+
+                    <h3>
+                        Mis entradas
+                    </h3>
+
+                    <p>
+                        Todas tus reservas quedan guardadas
+                        automáticamente en este dispositivo.
+                    </p>
+
+                </div>
+
+
+                <div class="help-card">
+
+                    <span>
+                        🔐
+                    </span>
+
+                    <h3>
+                        Seguridad
+                    </h3>
+
+                    <p>
+                        Esta versión funciona sin base de datos y
+                        utiliza almacenamiento local del navegador.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         MODAL PELÍCULA
+    ========================================== -->
+
+    <div
+        id="movieModal"
+        class="modal"
+    >
+
+        <div class="modal-content movie-modal">
+
+            <button
+                id="closeMovieModal"
+                class="modal-close"
+            >
+                ×
+            </button>
+
+
+            <div
+                id="modalPoster"
+                class="modal-poster"
+            >
+                🎬
+            </div>
+
+
+            <div class="modal-body">
+
+                <span
+                    id="modalGenre"
+                    class="section-label"
+                >
+                    ACCIÓN
+                </span>
+
+                <h2 id="modalTitle">
+                    Película
+                </h2>
+
+
+                <div class="modal-meta">
+
+                    <span id="modalRating">
+                        ⭐ 8.9
+                    </span>
+
+                    <span id="modalDuration">
+                        2h
+                    </span>
+
+                    <span id="modalYear">
+                        2026
+                    </span>
+
+                    <span id="modalAge">
+                        +13
+                    </span>
+
+                </div>
+
+
+                <p id="modalDescription">
+                    Descripción.
+                </p>
+
+
+                <button
+                    id="modalBookButton"
+                    class="primary-button"
+                >
+                    Reservar entradas
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MODAL CONFIRMACIÓN
+    ========================================== -->
+
+    <div
+        id="confirmationModal"
+        class="modal"
+    >
+
+        <div class="modal-content confirmation-modal">
+
+            <div class="confirmation-icon">
+                ✓
+            </div>
+
+            <h2>
+                ¡Reserva confirmada!
+            </h2>
+
+            <p>
+                Tu entrada ha sido guardada correctamente.
+            </p>
+
+
+            <div class="confirmation-ticket">
+
+                <div
+                    id="confirmationPoster"
+                    class="confirmation-poster"
+                >
+                    🎬
+                </div>
+
+
+                <div>
+
+                    <strong id="confirmationMovie">
+                        Película
+                    </strong>
+
+                    <p id="confirmationDate">
+                        Fecha
+                    </p>
+
+                    <p id="confirmationRoom">
+                        Sala
+                    </p>
+
+                    <p id="confirmationSeats">
+                        Asientos
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reservation-code">
+
+                <span>
+                    CÓDIGO DE RESERVA
+                </span>
+
+                <strong id="reservationCode">
+                    CINEMAX000
+                </strong>
+
+            </div>
+
+
+            <div class="confirmation-total">
+
+                <span>
+                    Total pagado
+                </span>
+
+                <strong id="confirmationTotal">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="confirmation-buttons">
+
+                <button
+                    id="closeConfirmation"
+                    class="secondary-button"
+                >
+                    Cerrar
+                </button>
+
+                <button
+                    id="viewTickets"
+                    class="primary-button"
+                >
+                    Ver mis entradas
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         TOAST
+    ========================================== -->
+
+    <div
+        id="toast"
+        class="toast"
+    >
+
+        <div class="toast-icon">
+            ✓
+        </div>
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Acción realizada.
+            </p>
+
+        </div>
+
+        <button id="closeToast">
+            ×
+        </button>
+
+    </div>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
